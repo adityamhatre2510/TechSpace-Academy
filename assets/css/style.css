@@ -2127,6 +2127,22 @@ button.back-to-top {
 	padding:10px 20px;
 	font-size:16px;
 }
+.radio-btn-control{
+	border:0;
+	border-radius:4px !important;
+	padding:10px 10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #606060;
+}
+.radio-btn-label{
+	border:0;
+	height:50px;
+	border-radius:4px !important;
+	font-size: 14px;
+	font-weight: 400;
+	color: #606060;
+}
 .cours-search .input-group-append{
 	margin-left:10px;
 }
