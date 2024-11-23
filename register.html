@@ -53,7 +53,7 @@
 	<div id="loading-icon-bx"></div>
 	<div class="account-form">
 		<div class="account-head" style="background-image:url(assets/images/background/bg2.jpg);">
-			<a href="index.html"><img src="assets/images/logo-white-2.png" alt=""></a>
+			<a href="index.html"><img src="assets/images/logo-white.png" alt=""></a>
 		</div>
 		<div class="account-form-inner">
 			<div class="account-container">
@@ -61,41 +61,49 @@
 					<h2 class="title-head">Sign Up <span>Now</span></h2>
 					<p>Login Your Account <a href="login.html">Click here</a></p>
 				</div>	
-				<form class="contact-bx">
+				<form class="contact-bx" action="register.php" method="post">
 					<div class="row placeani">
 						<div class="col-lg-12">
 							<div class="form-group">
-								<div class="input-group">
-									<label>Your Name</label>
-									<input name="dzName" type="text" required="" class="form-control">
+								<div class=""> 
+									<fieldset>
+										<label class="radio-btn-label" required="">Register as:</label>
+										<div>
+									<input type="radio" id="Student" name="dzRole" value="student" />
+									<label for="beginner" class="radio-btn-control">STUDENT</label>
+									<input type="radio" id="Instructor" name="dzRole" value="instructor" />
+									<label for="intermediate" class="radio-btn-control">INSTRUCTOR</label>
+									</div>
+									</fieldset>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group">
-									<label>Your Email Address</label>
-									<input name="dzName" type="email" required="" class="form-control">
+									<!-- <label>Your Name</label> -->
+									<input name="dzName" type="text" class="form-control" placeholder="Your Name">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="form-group">
+								<div class="input-group">
+									<!-- <label>Your Email Address</label> -->
+									<input name="dzEmail" type="email" class="form-control" placeholder="Your Email Address">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12">
 							<div class="form-group">
 								<div class="input-group"> 
-									<label>Your Password</label>
-									<input name="dzEmail" type="password" class="form-control" required="">
+									<!-- <label>Your Password</label> -->
+									<input name="dzPassword" type="password" class="form-control" placeholder="Your Password">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12 m-b30">
 							<button name="submit" type="submit" value="Submit" class="btn button-md">Sign Up</button>
-						</div>
-						<div class="col-lg-12">
-							<h6>Sign Up with Social media</h6>
-							<div class="d-flex">
-								<a class="btn flex-fill m-r5 facebook" href="#"><i class="fa fa-facebook"></i>Facebook</a>
-								<a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i>Google Plus</a>
-							</div>
 						</div>
 					</div>
 				</form>
