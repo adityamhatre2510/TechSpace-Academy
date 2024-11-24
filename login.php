@@ -6,7 +6,7 @@
 		// username => root now your db username 
 		// password => empty now your oen password
 		// database name => Your database name
-		$conn = mysqli_connect('localhost', 'root', 'root', 'techspace_academy');
+		$conn = mysqli_connect('localhost', 'root', '', 'techspace_academy');
 		
 		// Check connection
 		if($conn === false){

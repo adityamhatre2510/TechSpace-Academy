@@ -81,8 +81,13 @@ else{
 									<option data-icon="flag flag-us">English US</option>
 								</select>
 							</li>
+							<?php if (isset($_SESSION['user_id'])): ?>
+                                <li><?php echo htmlspecialchars($user_email); ?></li>
+                                <li><a href="Logout.php">Logout</a></li>
+                            <?php else: ?>
 							<li><a href="login.html">Login</a></li>
 							<li><a href="register.html">Register</a></li>
+                            <?php endif; ?>
 						</ul>
 					</div>
 				</div>
@@ -127,8 +132,8 @@ else{
 									<li class="add-menu-left">
 										<h5 class="menu-adv-title">Our Courses</h5>
 										<ul>
-											<li><a href="courses.html">Courses </a></li>
-											<li><a href="courses-details.html">Courses Details</a></li>
+											<li><a href="courses.php">Courses </a></li>
+											<li><a href="courses-details.php">Courses Details</a></li>
 											<li><a href="profile.html">Instructor Profile</a></li>
 											<li><a href="event.html">Upcoming Event</a></li>
 											<li><a href="membership.html">Membership</a></li>
@@ -242,7 +247,10 @@ else{
 									?>
 								<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
 									<div class="cours-bx">
-										
+										<div class="action-box">
+											<img src="assets/images/courses/pic1.jpg" alt="">
+											<a href="courses-details.php?course_id=<?php echo $row['course_id']; ?>" class="btn">Read More</a>
+										</div>
 										<div class="info-bx text-center">
 											<h5><a href="#"><?php echo $row['course_name']; ?></a></h5>
 											<span><?php echo $row['description']; ?></span>
