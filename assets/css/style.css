@@ -2130,14 +2130,15 @@ button.back-to-top {
 .radio-btn-control{
 	border:0;
 	border-radius:4px !important;
-	padding:10px 10px;
+	padding:6px 6px;
 	font-size: 14px;
 	font-weight: 400;
 	color: #606060;
+	height: 0px;
 }
 .radio-btn-label{
 	border:0;
-	height:50px;
+	height:20px;
 	border-radius:4px !important;
 	font-size: 14px;
 	font-weight: 400;
