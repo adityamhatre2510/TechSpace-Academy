@@ -2,7 +2,7 @@
 error_reporting(1);
 
 define("BASE_URL", dirname(__DIR__));
-define("ROOT_PATH", "http://localhost/CLOUDCOMPUTING/TechSpaceAcademy/admin");
+define("ROOT_PATH", "/admin");
 define("CURRENCY", "CAD");
 
 define("DB_HOST", "localhost");
