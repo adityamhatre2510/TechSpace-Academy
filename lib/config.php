@@ -2,8 +2,8 @@
 error_reporting(1);
 
 define("BASE_URL", dirname(__DIR__));
-define("ROOT_PATH", "http://localhost/CLOUDCOMPUTING/TechSpaceAcademy");
-define("ADMIN_APTH", "http://localhost/CLOUDCOMPUTING/TechSpaceAcademy/admin");
+define("ROOT_PATH", "/");
+define("ADMIN_APTH", "/admin");
 define("CURRENCY", "CAD");
 
 define("DB_HOST", "localhost");
