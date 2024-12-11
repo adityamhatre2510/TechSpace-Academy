@@ -17,7 +17,6 @@ $router = new Router(require_once BASE_URL.'/routes.php');
             
             <?php
             if(isset($_SESSION['error_request']) && !$_SESSION['error_request']) {
-
                 //<!-- Navigation -->
                 require_once BASE_URL.'/includes/navigation.php';
                 
@@ -27,7 +26,6 @@ $router = new Router(require_once BASE_URL.'/routes.php');
                 //<!-- Footer -->
                 require_once BASE_URL.'/includes/footer.php';                
             } else {
-                echo "in error";
                 //<!-- Error 404 Content -->
                 $_SESSION['error_request'] = false;
                 $router->route();
