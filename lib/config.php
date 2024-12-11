@@ -2,7 +2,7 @@
 error_reporting(1);
 
 define("BASE_URL", dirname(__DIR__));
-define("ROOT_PATH", "/");
+define("ROOT_PATH", "");
 define("ADMIN_APTH", "/admin");
 define("CURRENCY", "CAD");
 
