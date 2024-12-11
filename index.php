@@ -16,7 +16,7 @@ $router = new Router(require_once BASE_URL.'/routes.php');
             <!-- <div id="loading-icon-bx"></div> -->
             
             <?php
-            if(isset($_SESSION['error_request']) && !$_SESSION['error_request']) {
+            //if(isset($_SESSION['error_request']) && !$_SESSION['error_request']) {
                 //<!-- Navigation -->
                 require_once BASE_URL.'/includes/navigation.php';
                 
@@ -25,11 +25,11 @@ $router = new Router(require_once BASE_URL.'/routes.php');
 
                 //<!-- Footer -->
                 require_once BASE_URL.'/includes/footer.php';                
-            } else {
+            //} else {
                 //<!-- Error 404 Content -->
-                $_SESSION['error_request'] = false;
-                $router->route();
-            }
+            //    $_SESSION['error_request'] = false;
+            //    $router->route();
+            //}
             ?>
         </div>
         <?php
