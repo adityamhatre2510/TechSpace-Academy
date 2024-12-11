@@ -11,8 +11,8 @@
         <div class="ttr-logo-box">
             <div>
                 <a href="<?php echo ROOT_PATH; ?>/" class="ttr-logo">
-                    <img class="ttr-logo-mobile" alt="" src="<?php echo ROOT_PATH; ?>/assets/images/logo-mobile.png" width="30" height="30">
-                    <img class="ttr-logo-desktop" alt="" src="<?php echo ROOT_PATH; ?>/assets/images/logo-white.png" width="160" height="27">
+                    <img class="ttr-logo-mobile" alt="" src="<?php echo ROOT_PATH; ?>/assets/images/newlogo.png" width="30" height="30">
+                    <img class="ttr-logo-desktop" alt="" src="<?php echo ROOT_PATH; ?>/assets/images/newlogo.png" width="160" height="27">
                 </a>
             </div>
         </div>
