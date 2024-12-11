@@ -3,7 +3,7 @@
     <div class="ttr-sidebar-wrapper content-scroll">
         <!-- side menu logo start -->
         <div class="ttr-sidebar-logo">
-            <a href="#"><img alt="" src="<?php echo ROOT_PATH; ?>/assets/images/logo.png" width="122" height="27"></a>
+            <a href="#"><img alt="" src="<?php echo ROOT_PATH; ?>/assets/images/newlogo.png" width="122" height="27"></a>
             <div class="ttr-sidebar-toggle-button">
                 <i class="ti-arrow-left"></i>
             </div>
