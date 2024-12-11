@@ -37,7 +37,7 @@
                 <!-- Navigation Menu ==== -->
                 <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
                     <div class="menu-logo">
-                        <a href="<?php echo ROOT_PATH; ?>"><img src="<?php echo ROOT_PATH; ?>/assets/images/logo.png" alt=""></a>
+                        <a href="<?php echo ROOT_PATH; ?>"><img src="<?php echo ROOT_PATH; ?>/assets/images/newlogo.png" alt=""></a>
                     </div>
                     <ul class="nav navbar-nav">	
                         <li class="active"><a href="<?php echo ROOT_PATH; ?>/">Home</a></li>
