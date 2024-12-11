@@ -6,9 +6,9 @@ define("ROOT_PATH", "");
 define("ADMIN_PATH", "/admin");
 define("CURRENCY", "CAD");
 
-define("DB_HOST", "localhost");
-define("DB_USERNAME", "root");
-define("DB_PASSWORD", "");
+define("DB_HOST", "group2-techspace-academy-rds.czptxhzjxjrt.us-east-1.rds.amazonaws.com");
+define("DB_USERNAME", "admin");
+define("DB_PASSWORD", "techspaceacademy2");
 define("DB_NAME", "techspace_academy");
 
 function dd($data=null, $e=0) {
