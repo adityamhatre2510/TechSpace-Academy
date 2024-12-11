@@ -3,7 +3,7 @@ error_reporting(1);
 
 define("BASE_URL", dirname(__DIR__));
 define("ROOT_PATH", "");
-define("ADMIN_APTH", "/admin");
+define("ADMIN_PATH", "/admin");
 define("CURRENCY", "CAD");
 
 define("DB_HOST", "localhost");
