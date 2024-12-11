@@ -10,7 +10,7 @@
         <!--logo start -->
         <div class="ttr-logo-box">
             <div>
-                <a href="<?php echo ROOT_PATH; ?>" class="ttr-logo">
+                <a href="<?php echo ROOT_PATH; ?>/" class="ttr-logo">
                     <img class="ttr-logo-mobile" alt="" src="<?php echo ROOT_PATH; ?>/assets/images/logo-mobile.png" width="30" height="30">
                     <img class="ttr-logo-desktop" alt="" src="<?php echo ROOT_PATH; ?>/assets/images/logo-white.png" width="160" height="27">
                 </a>
@@ -21,7 +21,7 @@
             <!-- header left menu start -->
             <ul class="ttr-header-navigation">
                 <li>
-                    <a href="<?php echo ROOT_PATH; ?>" class="ttr-material-button ttr-submenu-toggle">HOME</a>
+                    <a href="<?php echo ROOT_PATH; ?>/" class="ttr-material-button ttr-submenu-toggle">HOME</a>
                 </li>
                 <li>
                     <a href="#" class="ttr-material-button ttr-submenu-toggle">QUICK MENU <i class="fa fa-angle-down"></i></a>
