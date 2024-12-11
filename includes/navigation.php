@@ -4,7 +4,7 @@
             <div class="container clearfix">
                 <!-- Header Logo ==== -->
                 <div class="menu-logo">
-                    <a href="<?php echo ROOT_PATH; ?>"><img src="<?php echo ROOT_PATH; ?>/assets/images/logo.png" alt=""></a>
+                    <a href="<?php echo ROOT_PATH; ?>/"><img src="<?php echo ROOT_PATH; ?>/assets/images/logo.png" alt=""></a>
                 </div>
                 <!-- Mobile Nav Button ==== -->
                 <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                         <a href="<?php echo ROOT_PATH; ?>"><img src="<?php echo ROOT_PATH; ?>/assets/images/logo.png" alt=""></a>
                     </div>
                     <ul class="nav navbar-nav">	
-                        <li class="active"><a href="<?php echo ROOT_PATH; ?>">Home</a></li>
+                        <li class="active"><a href="<?php echo ROOT_PATH; ?>/">Home</a></li>
                         <li><a href="<?php echo ROOT_PATH; ?>/courses">Courses</a></li>
                         <li><a href="<?php echo ROOT_PATH; ?>/about">About</a></li>
                         <li><a href="<?php echo ROOT_PATH; ?>/contact">Contact</a></li>
