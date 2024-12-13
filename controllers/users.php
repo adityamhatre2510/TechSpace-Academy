@@ -13,6 +13,8 @@ class UserController {
     }
 
     public function register() {
+        $user_data = array("first_name"=>'', "last_name"=>'', 'email'=>'');
+
         if($_SERVER["REQUEST_METHOD"] == "POST") {
             $user_data = $_REQUEST;
             $_REQUEST['user_role'] = "STUDENT";
@@ -22,8 +24,8 @@ class UserController {
             } else {
                 $result = $this->model->save($_REQUEST);
                 if($result['insert_id'] > 0 && $result['error'] == null) {
-                    //$_SESSION['success_msg'] = "Register Successfully";
-                    header('Location: '.ROOT_PATH.'/login');
+                    $_SESSION['success_msg'] = "Register Successfully";
+                    changelocation('login');
                     exit();
                 } else {
                     $_SESSION['err_msg'] = "Error while registration";
@@ -47,8 +49,7 @@ class UserController {
                 $_SESSION['is_user_login'] = true;
                 $_SESSION['user'] = $isLoggedIn;
                 $_SESSION['success_msg'] = "Login Successfully";
-                header('location: ./');
-                exit();
+                changelocation('');
             }
         }
         
@@ -57,9 +58,9 @@ class UserController {
 
     public function logout() {
         session_unset();
+        session_destroy();
         $_SESSION['message'] = "Logout successfully.";
-        header('Location:'.ROOT_PATH.'/login');
-        exit();
+        changelocation('login');
     }
 
     public function index() {

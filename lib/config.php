@@ -1,14 +1,15 @@
 <?php
-error_reporting(1);
+error_reporting(E_ALL);
+ini_set("display_errors", 0);
 
 define("BASE_URL", dirname(__DIR__));
-define("ROOT_PATH", "");
-define("ADMIN_PATH", "/admin");
+define("ROOT_PATH", "http://localhost/CLOUDCOMPUTING/TechProject");
+define("ADMIN_PATH", "http://localhost/CLOUDCOMPUTING/TechProject/admin");
 define("CURRENCY", "CAD");
 
-define("DB_HOST", "group2-techspace-academy-rds.czptxhzjxjrt.us-east-1.rds.amazonaws.com");
-define("DB_USERNAME", "admin");
-define("DB_PASSWORD", "techspaceacademy2");
+define("DB_HOST", "localhost");
+define("DB_USERNAME", "root");
+define("DB_PASSWORD", "");
 define("DB_NAME", "techspace_academy");
 
 function dd($data=null, $e=0) {
@@ -16,5 +17,13 @@ function dd($data=null, $e=0) {
     print_r($data);
     echo '</pre>';
     !$e? exit: '';
+}
+
+function changelocation($path = null) {
+    echo '
+        <script type="text/javascript">
+        window.location = "'.ROOT_PATH.'/'.$path.'";
+        </script>
+    ';
 }
 ?>

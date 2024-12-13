@@ -21,10 +21,10 @@
 							echo "no record";
 						} 
 						?>
-						<?php foreach($courses as $course) { ?>
+						<?php foreach($courses as $k=>$course) { ?>
 						<div class="card-courses-list admin-courses">
 							<div class="card-courses-media">
-								<img src="assets/images/courses/pic1.jpg" alt=""/>
+								<img src="assets/images/courses/pic<?php echo $k+1; ?>.jpg" alt=""/>
 							</div>
 							<div class="card-courses-full-dec">
 								<div class="card-courses-title">

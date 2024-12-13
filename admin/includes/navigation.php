@@ -44,7 +44,7 @@
                     <a href="#" class="ttr-material-button ttr-submenu-toggle"><span class="ttr-user-avatar"><img alt="" src="<?php echo ROOT_PATH; ?>/assets/images/testimonials/pic3.jpg" width="32" height="32"></span></a>
                     <div class="ttr-header-submenu">
                         <ul>
-                            <li><a href="user-profile.html">My profile</a></li>
+                            <li><a href="<?php echo ROOT_PATH; ?>/profile/admin">My profile</a></li>
                             <li><a href="<?php echo ROOT_PATH; ?>/logout">Logout</a></li>
                         </ul>
                     </div>

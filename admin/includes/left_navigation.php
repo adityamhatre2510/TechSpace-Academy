@@ -31,13 +31,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="ttr-material-button">
+                    <a href="<?php echo ROOT_PATH; ?>/profile/student" class="ttr-material-button">
                         <span class="ttr-icon"><i class="ti-user"></i></span>
                         <span class="ttr-label">Users</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="ttr-material-button">
+                    <a href="<?php echo ROOT_PATH; ?>/profile/instructor" class="ttr-material-button">
                         <span class="ttr-icon"><i class="ti-user"></i></span>
                         <span class="ttr-label">Instructors</span>
                     </a>

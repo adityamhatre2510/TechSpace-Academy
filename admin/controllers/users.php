@@ -8,10 +8,6 @@ class UserController {
         $this->model = new UserModel();
     }
 
-    public function profile() {
-        require_once './views/profile.php';
-    }
-
     public function login() {
 
         if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,7 +28,7 @@ class UserController {
 
     public function logout() {
         session_unset();
-        $_SESSION['message'] = "Logout successfully.";
+        $_SESSION['success_msg'] = "Logout successfully.";
         header('location:./');
         exit();
     }
@@ -45,6 +41,10 @@ class UserController {
             header('Location: ./login');
             exit();
         }
+    }
+
+    public function profile($profile=null) {
+        require_once './views/'.$profile.'_profile.php';
     }
 }
 ?>

@@ -13,8 +13,14 @@ class CourseModel {
         return $result->fetch_object();
     }
 
-    public function getAll() {
-        $sql = "SELECT courses.*, CONCAT(users.first_name, users.last_name) as instructor_name, categories.name as category_name FROM courses LEFT JOIN categories ON categories.id = courses.category_id LEFT JOIN users ON courses.instructor_id = users.id";
+    public function getAll($data = null) {
+        $limit = '';
+        if($data) {
+            if($data['limit']) {
+                $limit = " limit ".$data['limit'];
+            }
+        }
+        $sql = "SELECT courses.*, CONCAT(users.first_name, users.last_name) as instructor_name, categories.name as category_name FROM courses LEFT JOIN categories ON categories.id = courses.category_id LEFT JOIN users ON courses.instructor_id = users.id ".$limit;
         $result = $this->db->query($sql);
         $data = array();
 

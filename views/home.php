@@ -58,120 +58,42 @@
                     </div>
                 </div>
                 <div class="row">
-                <div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0">
-                    <div class="item">
-                        <div class="cours-bx">
-                            <div class="action-box">
-                                <img src="assets/images/courses/pic1.jpg" alt="">
-                                <a href="#" class="btn">Read More</a>
-                            </div>
-                            <div class="info-bx text-center">
-                                <h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-                                <span>Programming</span>
-                            </div>
-                            <div class="cours-more-info">
-                                <div class="review">
-                                    <span>3 Review</span>
-                                    <ul class="cours-star">
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
+                    <div class="courses-carousel owl-carousel owl-btn-1 col-12 p-lr0">
+                        <?php foreach($courses as $k=>$course) { ?>
+                        <div class="item">
+                            <div class="cours-bx">
+                                <div class="action-box">
+                                    <img src="<?php echo ROOT_PATH; ?>/assets/images/courses/pic<?php echo $k+1; ?>.jpg" alt="">
+                                    <a href="<?php echo ROOT_PATH; ?>/courses/<?php echo $course->id; ?>" class="btn">Read More</a>
                                 </div>
-                                <div class="price">
-                                    <del>$190</del>
-                                    <h5>$120</h5>
+                                <div class="info-bx text-center">
+                                    <h5><a href="<?php echo ROOT_PATH; ?>/courses/<?php echo $course->id; ?>"><?php echo $course->title; ?></a></h5>
+                                    <span><?php echo $course->category_name; ?></span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cours-bx">
-                            <div class="action-box">
-                                <img src="assets/images/courses/pic2.jpg" alt="">
-                                <a href="#" class="btn">Read More</a>
-                            </div>
-                            <div class="info-bx text-center">
-                                <h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-                                <span>Programming</span>
-                            </div>
-                            <div class="cours-more-info">
-                                <div class="review">
-                                    <span>3 Review</span>
-                                    <ul class="cours-star">
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="price">
-                                    <del>$190</del>
-                                    <h5>$120</h5>
+                                <div class="cours-more-info">
+                                    <div class="review">
+                                        <span><?php echo $course->rating; ?> Rating</span>
+                                        <ul class="cours-star">
+                                            <?php 
+                                            for($i=1; $i<=5;$i++) {
+                                                $rating_class = '';
+                                                if($i <= $course->rating) {
+                                                    $rating_class = ' class="active"';
+                                                }
+                                                echo '<li'.$rating_class.'><i class="fa fa-star"></i></li>';
+                                            }
+                                            ?>
+                                        </ul>
+                                    </div>
+                                    <div class="price">
+                                        <del><?php echo CURRENCY. " " .$course->cost_price; ?></del>
+                                        <h5 class="free"><?php echo ($course->selling_price>0?CURRENCY. " " .$course->selling_price:"Free"); ?></h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <?php } ?>
                     </div>
-                    <div class="item">
-                        <div class="cours-bx">
-                            <div class="action-box">
-                                <img src="assets/images/courses/pic3.jpg" alt="">
-                                <a href="#" class="btn">Read More</a>
-                            </div>
-                            <div class="info-bx text-center">
-                                <h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-                                <span>Programming</span>
-                            </div>
-                            <div class="cours-more-info">
-                                <div class="review">
-                                    <span>3 Review</span>
-                                    <ul class="cours-star">
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="price">
-                                    <del>$190</del>
-                                    <h5>$120</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cours-bx">
-                            <div class="action-box">
-                                <img src="assets/images/courses/pic4.jpg" alt="">
-                                <a href="#" class="btn">Read More</a>
-                            </div>
-                            <div class="info-bx text-center">
-                                <h5><a href="#">Introduction EduChamp – LMS plugin</a></h5>
-                                <span>Programming</span>
-                            </div>
-                            <div class="cours-more-info">
-                                <div class="review">
-                                    <span>3 Review</span>
-                                    <ul class="cours-star">
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li class="active"><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="price">
-                                    <del>$190</del>
-                                    <h5>$120</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -183,7 +105,7 @@
                         <div class="join-content-bx text-white">
                             <h2>Learn a new skill online on <br> your time</h2>
                             <h4><span class="counter">57,000</span> Online Courses</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>Discover the freedom to learn new skills online, anytime and anywhere. With flexible courses designed to fit your schedule, you can grow at your own pace and unlock your potential.</p>
                             <a href="#" class="btn button-md">Join Now</a>
                         </div>
                     </div>
@@ -197,7 +119,7 @@
                         <div class="col-lg-6 m-b30">
                         <h2 class="title-head ">Learn a new skill online<br> <span class="text-primary"> on your time</span></h2>
                         <h4><span class="counter">57,000</span> Online Courses</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                        <p>Discover the freedom to learn new skills online, anytime and anywhere. With flexible courses designed to fit your schedule, you can grow at your own pace and unlock your potential..</p>
                         <a href="#" class="btn button-md">Join Now</a>
                         </div>
                         <div class="col-lg-6">
@@ -209,7 +131,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="ttr-tilte">Our Philosophy</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                                        <p>Empowering minds through innovation, fostering creativity, and building future-ready skills</p>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +142,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="ttr-tilte">Kingster's Principle</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                                        <p>Strive for excellence through knowledge, innovation, and leadership, fostering a culture of continuous learning and integrity</p>
                                     </div>
                                 </div>
                             </div>
@@ -231,7 +153,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="ttr-tilte">Key Of Success</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                                        <p>The key to success lies in dedication, perseverance, continuous learning, and a clear vision, supported by strong values and adaptability to change</p>
                                     </div>
                                 </div>
                             </div>
@@ -242,7 +164,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5 class="ttr-tilte">Our Philosophy</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
+                                        <p>Knowledge ignites potential; innovation drives the future</p>
                                     </div>
                                 </div>
                             </div>
@@ -308,11 +230,11 @@
                                 <img src="assets/images/testimonials/pic1.jpg" alt="">
                             </div>
                             <div class="testimonial-info">
-                                <h5 class="name">Peter Packer</h5>
-                                <p>-Art Director</p>
+                                <h5 class="name">Seleena Packer</h5>
+                                <p>Cloud Architecture</p>
                             </div>
                             <div class="testimonial-content">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+                                <p>Learning from online platforms like Techspace Academy gave me the practical skills I needed to switch to a cloud analyst role and feel confident on day one.</p>
                             </div>
                         </div>
                     </div>
@@ -322,11 +244,11 @@
                                 <img src="assets/images/testimonials/pic2.jpg" alt="">
                             </div>
                             <div class="testimonial-info">
-                                <h5 class="name">Peter Packer</h5>
+                                <h5 class="name">James Walker</h5>
                                 <p>-Art Director</p>
                             </div>
                             <div class="testimonial-content">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type...</p>
+                                <p>Learning through structured courses and certifications gave me the technical depth and strategic perspective essential for designing scalable cloud solutions</p>
                             </div>
                         </div>
                     </div>

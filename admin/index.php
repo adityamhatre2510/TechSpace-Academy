@@ -42,6 +42,6 @@ $router = new Router(require_once './routes.php');
         ?>
 
         <!-- Internal / External JavaScripts -->
-        <?php //require_once './includes/js_scripts.php'; ?>
+        <?php require_once './includes/js_scripts.php'; ?>
     </body>
 </html>

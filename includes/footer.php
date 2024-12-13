@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="d-flex align-items-stretch">
                     <div class="pt-logo mr-auto">
-                        <a href="<?php echo ROOT_PATH; ?>"><img src="<?php echo ROOT_PATH; ?>/assets/images/logo-white.png" alt=""/></a>
+                        <a href="<?php echo ROOT_PATH; ?>"></a>
                     </div>
                     <div class="pt-social-link">
                         <ul class="list-inline m-a0">

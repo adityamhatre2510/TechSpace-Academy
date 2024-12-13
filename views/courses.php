@@ -52,7 +52,7 @@
 									<div class="ttr-post-media"> <img src="<?php echo ROOT_PATH; ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
 									<div class="ttr-post-info">
 										<div class="ttr-post-header">
-											<h6 class="post-title"><a href="./courses/1">Introduction EduChamp</a></h6>
+											<h6 class="post-title"><a href="./courses/1">Data Sceience</a></h6>
 										</div>
 										<div class="ttr-post-meta">
 											<ul>
@@ -91,12 +91,12 @@
 								echo "no record";
 							} 
 							?>
-							<?php foreach($courses as $course) { ?>
+							<?php foreach($courses as $k=>$course) { ?>
 
 							<div class="col-md-6 col-lg-4 col-sm-6 m-b30">
 								<div class="cours-bx">
 									<div class="action-box">
-										<img src="<?php echo ROOT_PATH; ?>/assets/images/courses/pic1.jpg" alt="">
+										<img src="<?php echo ROOT_PATH; ?>/assets/images/courses/pic<?php echo $k+1; ?>.jpg" alt="">
 										<a href="<?php echo ROOT_PATH; ?>/courses/<?php echo $course->id; ?>" class="btn">Read More</a>
 									</div>
 									<div class="info-bx text-center">
@@ -120,7 +120,7 @@
 										</div>
 										<div class="price">
 											<del><?php echo CURRENCY. " " .$course->cost_price; ?></del>
-											<h5><?php echo CURRENCY. " " .$course->selling_price; ?></h5>
+											<h5><?php echo ($course->selling_price>0?CURRENCY. " " .$course->selling_price:"Free"); ?></h5>
 										</div>
 									</div>
 								</div>
@@ -129,7 +129,7 @@
 							<?php } ?>
 							
 							
-							<div class="col-lg-12 m-b20">
+							<!-- <div class="col-lg-12 m-b20">
 								<div class="pagination-bx rounded-sm gray clearfix">
 									<ul class="pagination">
 										<li class="previous"><a href="#"><i class="ti-arrow-left"></i> Prev</a></li>
@@ -139,7 +139,7 @@
 										<li class="next"><a href="#">Next <i class="ti-arrow-right"></i></a></li>
 									</ul>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>

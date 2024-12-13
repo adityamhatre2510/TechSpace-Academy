@@ -27,7 +27,7 @@
 						<div class="course-detail-bx">
 							<div class="course-price">
 								<del><?php echo CURRENCY. " " .$course->cost_price; ?></del>
-								<h4 class="price"><?php echo CURRENCY. " " .$course->selling_price; ?></h4>
+								<h4 class="price"><?php echo ($course->selling_price>0?CURRENCY. " " .$course->selling_price:"Free"); ?></h4>
 							</div>	
 							<div class="course-buy-now text-center">
 								<a href="#" class="btn radius-xl text-uppercase">Buy Now This Courses</a>
@@ -115,29 +115,21 @@
 						<div class="m-b30" id="curriculum">
 							<h4>Curriculum</h4>
 							<ul class="curriculum-list">
+								<?php foreach($all_curriculams as $nckey=>$curriculams) { ?>
 								<li>
-										<h5>First Level</h5>
-										<ul>
-											<li>
-												<div class="curriculum-list-box">
-													<span>Lesson 1.</span> Introduction to UI Design
-												</div>
-												<span>120 minutes</span>
-											</li>
-											<li>
-												<div class="curriculum-list-box">
-													<span>Lesson 2.</span> User Research and Design
-												</div>
-												<span>60 minutes</span>
-											</li>
-											<li>
-												<div class="curriculum-list-box">
-													<span>Lesson 3.</span> Evaluating User Interfaces Part 1
-												</div>
-												<span>85 minutes</span>
-											</li>
-										</ul>
+									<h5><?php echo $nckey; ?></h5>
+									<ul>
+										<?php foreach($curriculams as $nckey1=>$curriculam) { ?>
+										<li>
+											<div class="curriculum-list-box">
+												<span>Lesson <?php echo $nckey1+1; ?> .</span> <?php echo $curriculam['title']; ?>
+											</div>
+											<span><?php echo $curriculam['duration']; ?> minutes</span>
+										</li>
+										<?php } ?>
+									</ul>
 								</li>
+								<?php } ?>
 							</ul>
 						</div>
 						<div class="" id="instructor">
@@ -155,7 +147,6 @@
 										<li><a href="#" class="btn sharp-sm linkedin"><i class="fa fa-linkedin"></i></a></li>
 										<li><a href="#" class="btn sharp-sm google-plus"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
-									<p class="m-b0"><?php echo $course->instructor_description; ?></p>
 								</div>
 							</div>
 						</div>

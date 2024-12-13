@@ -17,7 +17,7 @@
 								Total Frofit
 							</h4>
 							<span class="wc-des">
-								All Customs Value
+								All Students Value
 							</span>
 							<span class="wc-stats">
 								$<span class="counter">18</span>M 
@@ -43,7 +43,7 @@
 								 New Feedbacks
 							</h4>
 							<span class="wc-des">
-								Customer Review
+								Student Review
 							</span>
 							<span class="wc-stats counter">
 								120 
@@ -66,20 +66,20 @@
 					<div class="widget-card widget-bg3">					 
 						<div class="wc-item">
 							<h4 class="wc-title">
-								New Orders 
+								New Courses 
 							</h4>
 							<span class="wc-des">
-								Fresh Order Amount 
+								New Order Added 
 							</span>
 							<span class="wc-stats counter">
-								772 
+								10 
 							</span>		
 							<div class="progress wc-progress">
 								<div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 							<span class="wc-progress-bx">
 								<span class="wc-change">
-									Change
+									Progress
 								</span>
 								<span class="wc-number ml-auto">
 									65%
@@ -92,10 +92,10 @@
 					<div class="widget-card widget-bg4">					 
 						<div class="wc-item">
 							<h4 class="wc-title">
-								New Users 
+								New Students 
 							</h4>
 							<span class="wc-des">
-								Joined New User
+								Joined New Student
 							</span>
 							<span class="wc-stats counter">
 								350 

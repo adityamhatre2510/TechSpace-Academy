@@ -13,8 +13,12 @@ class CourseCurriculumModel {
         return $result->fetch_assoc();
     }
 
-    public function getAll() {
-        $sql = "SELECT * FROM course_curriculum";
+    public function getAll($data = null) {
+        $condition = " WHERE 1=1 ";
+        if(isset($data['course_id'])) {
+            $condition .= " AND course_id = ".(int)$data['course_id'];
+        }
+        $sql = "SELECT * FROM course_curriculum ".$condition;
         $result = $this->db->query($sql);
         $data = array();
 
@@ -27,7 +31,7 @@ class CourseCurriculumModel {
         return $data;
     }
 
-    public function save($course_id=0, $data) {  
+    public function save($course_id=0, $data=array()) {  
         $sql = "DELETE * FROM course_curriculum WHERE course_id = ".(int)$course_id;
         $this->db->query($sql);
 

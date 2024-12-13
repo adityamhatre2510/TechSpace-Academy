@@ -8,11 +8,11 @@
 	<meta name="robots" content="" />
 	
 	<!-- DESCRIPTION -->
-	<meta name="description" content="EduChamp : Education HTML Template" />
+	<meta name="description" content="TechSpace Academy : An Online Education Platform" />
 	
 	<!-- OG -->
-	<meta property="og:title" content="EduChamp : Education HTML Template" />
-	<meta property="og:description" content="EduChamp : Education HTML Template" />
+	<meta property="og:title" content="TechSpace Academy : An Online Education Platform" />
+	<meta property="og:description" content="TechSpace Academy : An Online Education Platform" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
 	
@@ -21,7 +21,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo ROOT_PATH; ?>/assets/images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE ============================================= -->
-	<title>EduChamp : Education HTML Template </title>
+	<title>TechSpace Academy : An Online Education Platform </title>
 	
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
